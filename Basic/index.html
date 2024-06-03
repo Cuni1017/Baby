@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- meta標籤 -->
+  <meta charset="UTF-8" /> <!--網頁利用UTF-8編碼方式 才能顯示中文--> <!--<meta charset="UTF-8"></meta> 因為meta中間無內容,</meta>可省略-->
+  <meta name="description" content="Cuni的網站，裡面有很多測試" /> <!--讓搜尋引擎更了解這個網站的內容-->
+  <meta name="author" content="Cuni" />
+  <meta name="keywords" content="Cuni,html,測試" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--width=device-width 根據瀏覽的裝置大小做畫面調整,initial-scale=1.0 初始縮放比為100%-->
+  <title>Cuni的網頁</title>
+</head>
+
+<body>
+  <h1>第一篇文章</h1> <!--h1~h6 數字越大字體越小(標題重要程度)-->
+  <p>第一篇<i><b>內容</b></i></p> <!--<b>粗體  <i>斜體-->
+  <br /> <!--換行-->
+  <hr /> <!--水平線-->
+  <h2>第二篇文章</h2>
+  <p>第二篇<i>內</i><b>容</b></p>
+
+  <!-- 連結 & 圖片 -->
+  <a href="https://google.com">Google網站</a>
+  <a href="page2.html">第二頁</a>
+  <a href="dir/page3.html">第三頁</a> <!--進入dir資料夾尋找-->
+  <a href="zrush.jpg">Zrush</a>
+
+  <img src="https://i.epochtimes.com/assets/uploads/2021/08/id13156667-shutterstock_376153318-450x322.jpg" />
+  <img src="zrush.jpg" width="400" height="400" /> <!--若只給width或height 另一個會等比例縮小-->
+
+  <!-- 影片 & 崁入Youtube影片 -->
+  <!-- <video src="my_video.mp4" controls width="1080">瀏覽器無法載入影片</video>  "瀏覽器無法載入影片"為無法播放時出現的字-->
+  <br />
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CLUPkcLQm64" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+  <!-- 列表 & 表格 -->
+  <ol type="i" style="color:red;"> <!--ul圓點,ol type="A,a,I,i,1"-->
+    <li>Google</li>
+    <li>YouTube</li>
+    <li>IG</li>
+    <li>ptt</li>
+  </ol>
+
+  <table width="400" style="color:red;">
+    <tr> <!--tr 表示一行-->
+      <td>日期</td>
+      <td>數學</td>
+      <td>英文</td>
+    </tr>
+    <tr>
+      <td>2/8</td>
+      <td>87</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>2/9</td>
+      <td>78</td>
+      <td>96</td>
+    </tr>
+  </table>
+
+  <!-- html的容器 div & span--> <!--美化及排版時使用容器(div)更方便-->
+  <div style="color:blue;">
+    <ol type="i"> <!--ul圓點,ol type="A,a,I,i,1"-->
+      <li>Google</li>
+      <li>YouTube</li>
+      <li>IG</li>
+      <li>ptt</li>
+    </ol>
+
+    <table width="400">
+      <tr> <!--tr 表示一行-->
+        <td>日期</td>
+        <td>數學</td>
+        <td>英文</td>
+      </tr>
+      <tr>
+        <td>2/8</td>
+        <td>87</td>
+        <td>69</td>
+      </tr>
+      <tr>
+        <td>2/9</td>
+        <td>78</td>
+        <td>96</td>
+      </tr>
+    </table>
+  </div>
+
+  <a href="#">link1</a>
+  <a href="#">link2</a>
+  <hr />
+  <p>你好</p>
+  <P>SB</P>
+
+  <hr />
+  <span>span1</span> <!--span只佔其長度 div佔一整行 div較為常用-->
+  <span>span1</span>
+  <br />
+  <div>div1</div>
+  <div>div2</div>
+
+  <hr />
+  <!-- html 輸入欄位 -->
+
+  <input type="text" placeholder="請輸入帳號" />
+  <br /> <br />
+  <input type="password" placeholder="請輸入密碼" />
+  <br /> <br />
+  <input type="date" />
+  <br /> <br />
+  <input type="range" />
+  <br /> <br />
+  <input type="file" />
+  <br /> <br />
+  <input type="checkbox" />
+  <br /> <br />
+  <textarea>預設</textarea>
+
+</body>
+
+</html>
+
+<!-- w3schools.com/html/ -->

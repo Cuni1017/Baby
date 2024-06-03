@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="../../jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div id="notify"></div>
+
+  <span onclick="getData();">熱門</span>
+  <span>最新</span>
+  <script type="text/javascript">
+    function getData() {
+      var req = new XMLHttpRequest(); //物件用來和伺服器連線
+      req.open("get", "file:///C:/Users/H270/Downloads/WEB/ajaxTest/latest.html");
+      req.send(); //送出連線
+      req.onload = function () { //load事件，偵測連線的狀態結束
+        //連線完成
+        alert(this.responseText);
+      }
+    }
+  </script>
+
+  <script src="../../jquery-3.6.0.min.js"></script>
+  <script src="ajax1.js"></script>
+</body>
+
+</html>

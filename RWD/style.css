@@ -1,0 +1,83 @@
+.container {
+  font-size: 0;
+  text-align: center;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  display: inline-block;
+  border: solid 3px;
+  height: 250px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.block .icon {
+  width: 30%;
+  min-width: 200px;
+}
+.block p {
+  font-size: 15px;
+}
+.block h4 {
+  text-align: center;
+}
+
+.a {
+  height: initial;
+}
+
+.sblock {
+  border: solid 2px black;
+  display: inline-block;
+  width: 30%;
+}
+.sblock img {
+  width: 100%;
+  height: 200px;
+  background-color: #aaa;
+}
+
+.intro {
+  height: initial;
+}
+
+.a, .g, .intro {
+  width: 100%;
+}
+
+.b {
+  width: 70%;
+}
+
+.c, .f {
+  width: 30%;
+}
+
+.d, .e {
+  width: 35%;
+}
+
+@media screen and (max-width: 800px) {
+  .b {
+    width: 100%;
+  }
+
+  .c, .d, .e, .f {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .b, .c, .d, .e, .f {
+    width: 100%;
+  }
+
+  .sblock {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

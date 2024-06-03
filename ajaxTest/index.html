@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+
+</head>
+
+<body>
+
+  <span onclick="getData();">熱門</span>
+  <span>最新</span>
+
+  <script src="../jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    function getData() {
+      var req = new XMLHttpRequest(); //物件用來和伺服器連線
+      req.open("get", "latest.html");
+      req.send(); //送出連線
+      req.onload = function () { //load事件，偵測連線的狀態結束
+        //連線完成
+        alert(this.responseText);
+      }
+    }
+  </script>
+</body>

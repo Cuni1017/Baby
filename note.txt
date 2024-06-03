@@ -1,0 +1,16 @@
+<input type="text" placeholder="Username" /> placeholder描述輸入框需要用戶做的事 會淺淺的出現在輸入框內
+submit 提交 可使用value="提交"填入按鈕的文字
+
+outline: none; 滑鼠移過去時的外框取消
+
+cursor: pointer; 滑鼠移過去時 箭頭變手指 暗示此可以操作的按鈕
+
+focus Selector 判斷使用者是否具焦在某物上 如 .input[type="text"]:focus { background-color:white; }
+
+transition: 0.5s; 動畫的延遲感
+
+hover 淡入/淡出
+
+transfor:scale(n) 將元素變形為原本的n倍。
+
+box-shadow : 10px 10px 5px rgba(0,0,0,0.8) 陰影效果 (水平位移,垂直位移,模糊程度,顏色(透明度0.8))

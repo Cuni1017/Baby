@@ -1,0 +1,125 @@
+$color_yellow: #ffb336
+$color_blue: #27232F
+$color_white: #f3f7f7
+$color_grey: #333
+
+$font_base_size: 10px
+$max_content_width: 768px
+
+
+*  
+    // border: solid 1px
+    position: relative
+    font-family: "Raleway",sans-serif, "Microsoft JhengHei"
+
+html,body
+    padding: 0px
+    margin: 0px
+
+@mixin size($w,$h)
+    width: $w
+    height: $h
+
+.max_width
+    max-width: $max_content_width
+    margin: auto auto
+
+.header
+    height: 300px
+    background-color: $color_blue
+    & .icon
+        width: 150px
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translateX(-50%) translateY(-50%)
+.content
+    max-width: 768
+    // font-family: Raleway, "Microsoft JhengHei"
+    padding:50px
+
+    & h5
+        margin-top: 10px 
+    & .title_hr
+        border: solid 5px $color_yellow
+        width: 100px
+    & h1
+        font-size: $font_base_size*4
+    & h2
+        font-size: $font_base_size*3
+    & h3
+        font-size: $font_base_size*2
+    & h1.small_english
+        font-size: $font_base_size*2.4
+    & h2.small_english
+        font-size: $font_base_size*1.6
+    & h3.small_english
+        font-size: $font_base_size*1.2
+        
+    & .small_english
+        margin-top: -15px
+
+    & .button
+        padding: 5px 25px
+        margin-right: 10px
+        letter-spacing: 2px
+        font-size: $font_base_size*2
+        font-weight: 700
+        display: inline-block
+        border: solid 2px $color_blue
+    & .button_blue
+        background-color: $color_blue
+        color: $color_white
+        font-weight: 500 
+    & .button_yellow
+        background-color: $color_yellow 
+        color: $color_blue
+ 
+    & .color_chip
+        display: inline-block
+        margin-right: 25px
+        & .color_block,& .color_tag
+            display: inline-block
+            vertical-align: middle
+        & .color_tag
+            width: 65px
+        & .color_block
+            +size(30px,30px)
+            border: solid 2px white
+
+        & .color_block_yellow
+            background-color: $color_yellow
+        & .color_block_blue
+            background-color: $color_blue
+        & .color_block_white
+            background-color: $color_white
+        & .color_block_grey
+            background-color: $color_grey      
+
+.content_blue
+    background-color: $color_blue
+    color: $color_white
+    & .small_english
+        color: $color_yellow
+    & h1,& h2,& h3
+        font-weight: 500
+    & .button
+        border-color: $color_white
+
+.content_grey
+    background-color: $color_grey
+    color: $color_white
+    & .small_english
+        color: $color_yellow
+    & h1,& h2,& h3
+        font-weight: 500
+    & .button
+        border-color: $color_white
+
+.content_white
+    background-color: $color_white
+    color: $color_grey
+    & .small_english
+        color: $color_blue
+    & h1,& h2,& h3
+        font-weight: 900

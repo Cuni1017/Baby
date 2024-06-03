@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        document.onclick = function () {
+            //創建請求對象
+            var request = new XMLHttpRequest()
+            //設置請求
+            request.open('GET', 'JSON1.json', true)
+            //發送請求
+            request.send();
+
+            request.onreadystatechange = function () {
+                if (request.readyState == 4) { //響應解析完成
+                    if (request.status == 200) {
+                        //數據
+                        document.write(request.response)
+                        //數據轉成json對象
+                        var jsonData = JSON.parse(request.response)
+                        //數組
+                        var people = jsonData.people;
+                        // alert(people);
+                        //渲染
+                        var oUl = document.createElement('ul');
+                        for(var i=0;i<people.length;i++){
+                            var oLi = document.createElement('li')
+                            oLi.innerHTML = people[i].firstName;
+                            oUl.appendChild(oLi);
+                        }
+                        document.body.appendChild(oUl);
+                    }
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+*
+    // border: solid 1px black
+    position: relative 
+    vertical-align: top
+
+html,body
+    width: 100%
+    height: 100%
+
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    background-color: #222
+
+.phone
+    width: 250px
+    padding: 10px 
+    background-color: #fff
+    border-radius: 10px
+    transition-duration: 0.5s
+    left: 0
+
+.top
+    height: 40px
+    .camera
+        width: 10px
+        height: 10px
+        border-radius: 100%
+        background-color:#333
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translateX(-50%) translateY(-50%)
+.screen
+    height: 350px
+    transition: 0.5s
+    overflow: hidden
+    cursor: pointer
+    .pages
+        width: 100%
+        height: 100%
+        background-color: #333
+        white-space: nowrap
+        font-size: 0px
+        transition: 0.5s
+        left:0px
+
+        .page
+            font-size: initial
+            background-color: #333
+            display: inline-block
+            width: 100%
+            height: 100%
+            padding: 10px
+            box-sizing: border-box
+            position: relative
+            white-space: normal
+            color: #eee
+            font-size: 15px
+            
+            p
+                margin-top: 30px
+
+
+            h2
+                color:white
+                font-size: 20px
+                margin: 0
+
+            &:before
+                position: absolute
+                left: 0
+                top: 0
+                content: ""
+                display: block
+                background-color: #FFAB36
+                height: 60px
+                // margin: -10px
+                width: 100%
+            &:after
+                position: absolute
+                left: 0
+                bottom: 0
+                content: ""
+                display: block
+                background-color: #FFAB36
+                height: 20px
+                width: 100%
+        .page1
+            background-color: #FFAB36
+            color: white
+
+            h1,h2
+                margin: 5px
+            h2
+                font-size: 20px
+                margin-bottom: 0px
+            h1
+                font-size: 30px
+                margin-top: 0px
+            .orange
+                width: 300px
+                height: 300px
+                background-color: #FF9E17
+                border-radius: 100%
+
+.bottom
+    height: 40px
+
+    .homeBT
+        width: 40px
+        height: 40px
+        border-radius: 100%
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translateX(-50%) translateY(-50%)
+        text-align: center
+        font-size: 30px
+        border: solid 1px rgba(black,0.2 )
+        cursor: pointer
+        &:hover
+            background-color: #ddd
+        
+.buttons
+    
+    .button
+        background-color: transparent
+        border: solid 1px rgba(#fff,0.2)
+        color: white
+        padding: 5px 14px
+        display: inline-block
+        margin: 0
+        text-align: center
+        font-size: 15px
+        border-radius: 5px
+        cursor: pointer
+        &:hover 
+            background-color: #fff
+            color: #333
+       
+
+.status,.phonename
+    color: white
+    margin: 0
+
+.status
+    margin-top: 20px
+    font-size: 15px
+
+.phonename
+    margin: 10px
+    font-size: 25px

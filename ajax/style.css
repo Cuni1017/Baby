@@ -1,0 +1,34 @@
+div {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+#box {
+  background-color: red;
+}
+
+#view {
+  background-color: blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  width: 1110px;
+  margin: 0 auto;
+}
+#content .section {
+  width: 200px;
+  height: 360px;
+  margin: 10px;
+  border: solid 1px;
+  float: left;
+}
+#content .section img {
+  width: 200px;
+  height: 300px;
+}/*# sourceMappingURL=style.css.map */

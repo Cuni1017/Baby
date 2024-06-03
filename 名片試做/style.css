@@ -1,0 +1,91 @@
+*{
+    /* border: solid 1px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+
+html,body {
+    width: 100%; height: 100%;
+    padding: 0px; margin: 0px; 
+}
+
+body{
+    background-color: #d1d1d1;
+    border-top: solid 20px #F24;
+    border-bottom: solid 20px #F24;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.namecard{
+    width: 350px; height: 200px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 250px;
+    background-color: #eee;
+
+    letter-spacing: 1px;
+    font-weight: 100;
+
+    color: rgba(0,0,0,0.5);
+
+    overflow: hidden;
+    border: solid 1px rgba(0,0,0,0.15);
+    border-radius: 6px;
+
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+
+.namecard h2{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.namecard h2 span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.namecard h5{
+    color: #F24;
+}
+
+.namecard p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.circle{
+    width: 100px; height: 100px;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.circle1{
+    right: 100px;
+    bottom: -70px;
+    background-color: #F24;
+}
+
+.circle2{
+    width: 60px; height: 60px;
+    right: -30px;
+    top: -30px;
+    border: solid 3px #F24;
+}
+
+.page_title{
+    /* border: solid 1px; */
+    text-align: center;
+    color: #555;
+    font-weight: 700;
+}
+
+.mark{
+    font-size: 300px;
+    position: absolute; /* 讓其不參與排列 */
+    bottom: 250px;
+    color: rgba(0,0,0,0.2);
+}
